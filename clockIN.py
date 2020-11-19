@@ -1,6 +1,6 @@
 from selenium import webdriver
 
-driver = webdriver.Chrome()
+driver = webdriver.Chrome()  # this instantiates the webdriver
 driver.get('https://timemachine1-vm.berea.edu/ultratime/ultrapunch/login.aspx')
 
 myID = driver.find_element_by_xpath('//*[@id="UserID"]')
@@ -11,3 +11,4 @@ myPassword.send_keys('1234')
 
 inButton = driver.find_element_by_xpath('//*[@id="BUTIN"]')
 inButton.click()
+
